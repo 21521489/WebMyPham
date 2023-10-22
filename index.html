@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Website Mỹ Phẩm</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <a href="#" class="logo">LogoBrand</a>
+
+      <div class="menu-content">
+        <ul class="menu-items">
+          <li class="item">
+            <a href="#">Dashboard</a>
+           </li>
+
+           <li class="item">
+            <div class="submenu-item">
+              <span>Products</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i>
+                Products
+              </div>
+              <li class="item">
+                <li id="addproduct-form"><a href="#">Add Product</a> </li>
+                
+              </li>
+              <li class="item">
+                <a href="#">Edit Product</a>
+                
+              </li>
+              <li class="item">
+                <a href="#">Delete Product</a>
+              </li>
+            </ul>
+           </li>
+      
+           <li class="item">
+            <div class="submenu-item">
+              <span>Orders</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i>
+                Orders
+              </div>
+              <li class="item">
+                <li id="orderinfo"><a href="#">Order's information</a></li>
+
+              </li>
+              
+            </ul>
+          </li>
+
+          <li class="item">
+              <div class="submenu-item">
+                <span>Users</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+  
+              <ul class="menu-items submenu">
+                <div class="menu-title">
+                  <i class="fa-solid fa-chevron-left"></i>
+                  Users
+                </div>
+                <li class="item">
+                  <li id="adduser-form"><a href="#">Add User</a> </li>
+                  
+                </li>
+                <li class="item">
+                  <a href="#">Edit User</a>
+                  
+                </li>
+                <li class="item">
+                  <a href="#">Delete User</a>
+                </li>
+              </ul>
+             </li>
+
+          <li class="item">
+            <div class="submenu-item">
+              <span>Customers</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i>
+                Customers
+              </div>
+              <li class="item">
+                <li><a href="#">Edit Customer</a> </li>
+                
+              </li>
+              <li class="item">
+                <a href="#">Delete Customer</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar">
+      <i class="fa-solid fa-bars" id="sidebar-close"></i>
+    </nav>
+
+    <main class="main">
+      <div class="container">
+        <div class="addproduct-form">
+          <div class="addproduct-form-content">
+           <h2>Create new product <span id="addproduct-close">X Close</span></h2>
+           <form action="">
+             <input type="text" placeholder="Product Title">
+             <input type="file" id="myFile" name="filename">
+             <input type="text" placeholder="Description">
+             <input type="text" placeholder="Price">
+             <input type = "checkbox" name = “checkpublish” value = “publish”[checked]> Published
+              <div class="buttons">
+              <button class="cancel-btn">Cancel</button>
+              <button class="submit-btn">Submit</button>
+            </div>
+           </form>
+        </div>
+      </div>
+     </div>
+         <div class="container2">
+             <div class="orderinfo">
+               <h2>Order Details <span id="order-paid-close">paid</span></h2>
+               <hr width="1040px">
+               <b>Order #<br></b>
+               <b>Oder Date <br></b>
+               <b>Oder Status <br></b>
+               <b>SubTotal <br></b>
+             
+               <br> <h2>Customer Details </h2>
+               <hr>
+               <b>Full Name<br></b>
+               <b>Email <br></b>
+               <b>Phone <br></b>
+               <br> <h2>Billing Address </h2>
+               <hr>
+               <br> <h2>Order Items </h2>
+               <hr>
+           </div>
+           </div>
+
+           <div class="container3">
+            <div class="adduser-form">
+              <div class="adduser-form-content">
+               <h2>Create new user <span id="adduser-close">X Close</span></h2>
+               <form action="">
+                 <input type="text" placeholder="Name">
+                 <input type="text" placeholder="Email">
+                 <input type="text" placeholder="Password">
+                  <div class="buttons">
+                  <button class="cancel-btn">Cancel</button>
+                  <button class="submit-btn">Submit</button>
+                </div>
+               </form>
+            </div>
+          </div>
+         </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
